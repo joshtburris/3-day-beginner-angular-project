@@ -1,0 +1,47 @@
+.sidebar {
+	height: 100%;
+	width: 20%;
+	color: black !important;
+	background-color: #f1f1f1 !important;
+	position: fixed !important;
+	display: block;
+	padding: 8px 16px;
+	text-align: left;
+	border: none;
+	white-space: normal;
+	float: none;
+	outline: 0;
+	overflow: auto;
+}
+
+.main-page {
+	margin-left: 25%;
+}
+
+.sidebar-button {
+	padding: 8px 16px;
+	width: 100%;
+	border: none;
+	display: block;
+	outline: 0;
+	display: inline-block;
+	overflow: hidden;
+	color: inherit;
+	background-color: inherit;
+	text-align: left;
+}
+
+.sidebar-button:hover {
+	background-color: #d1d1d1;
+}
+
+input.button {
+	height: 40px;
+	width: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 50px;
+	background-color:seagreen;
+	color:white;
+}

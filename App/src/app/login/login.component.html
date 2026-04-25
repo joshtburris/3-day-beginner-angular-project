@@ -1,0 +1,67 @@
+<section>
+
+	<div>
+		<img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/f542029a1db4efd32b4ad99c803c2e57"
+			alt="MyAngularProject"
+			style="width:200px; height:200px;" />
+	</div>
+
+	<form>
+		<p class="title">
+			Sign in
+		</p>
+
+		<p>
+			<input
+				class="underline-border"
+				type="text"
+				name="email"
+				[(ngModel)]="email"
+				placeholder="Email"
+				[disabled]="isEmailVerified || verifying" />
+		</p>
+
+		<p>
+			<input
+				class="underline-border"
+				type="password"
+				name="password"
+				[(ngModel)]="password"
+				placeholder="Password"
+				*ngIf="isEmailVerified"
+				[disabled]="verifying" />
+		</p>
+
+		<p style="color:red;"
+			*ngIf="badAttemptMessage">
+			<label>{{ badAttemptMessage }}</label>
+		</p>
+
+		<p class="forgot-password">
+			<label>Forgot Password?&nbsp;</label>
+			<a href="">Click Here</a>
+		</p>
+		
+		<p>
+			<input type="button"
+				id="next-button"
+				class="button"
+				value="NEXT"
+				(click)="verifyEmail()"
+				*ngIf="!isEmailVerified"
+				[disabled]="verifying" />
+			<input type="button"
+				id="back-button"
+				class="button"
+				value="&lt; BACK"
+				(click)="back()"
+				*ngIf="isEmailVerified" />
+			<input type="button"
+				id="submit-button"
+				class="button"
+				value="SIGN IN"
+				(click)="login()"
+				*ngIf="isEmailVerified" />
+		</p>
+	</form>
+</section>

@@ -1,0 +1,59 @@
+section {
+	background: white;
+	border-radius: 5px;
+	padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+p.title {
+	color: indigo;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+
+input.underline-border {
+	border-style: none none solid none;
+	border-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.forgot-password {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: lighter;
+	font-weight: 100;
+}
+
+input.button {
+	height: 40px;
+	width: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 50px;
+}
+
+input#next-button {
+	background-color:seagreen;
+	color:white;
+}
+
+input#submit-button {
+	background-color:seagreen;
+	color:white;
+}
+
+input#back-button {
+	background-color:white;
+	color:black;
+	border: none;
+}

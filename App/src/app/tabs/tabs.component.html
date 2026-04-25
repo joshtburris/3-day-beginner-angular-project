@@ -1,0 +1,30 @@
+<div class="sidebar">
+	<img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/f542029a1db4efd32b4ad99c803c2e57"
+		alt="MyAngularProject"
+		style="width:100%; height:auto;" />
+	<input type="button" class="button" value="+ NEW REQUEST" />
+	<br>
+	<input type="button" value="REQUESTS" class="sidebar-button" />
+	<br>
+	<input type="button" value="CHECK ELIGIBILITY" class="sidebar-button" />
+	<br>
+	<input type="button" value="AGENCIES" class="sidebar-button" />
+	<br>
+	<input type="button" value="CASE MANAGERS" class="sidebar-button" />
+	<br>
+	<input type="button" value="RAMZI ALTAMIMI" class="sidebar-button" />
+	<br>
+	<input type="button" value="COMPANY SETTINGS" class="sidebar-button" (click)="navigate('CompanySettings')" />
+	<br>
+	<input type="button" value="PORTAL FAQS" class="sidebar-button" />
+	<br>
+	<input type="button" value="LOGOUT" class="sidebar-button" (click)="logout()" />
+</div>
+
+<div class="main-page" *ngIf="tab=='CompanySettings'">
+	<app-company-settings></app-company-settings>
+</div>
+
+<div class="main-page" *ngIf="tab=='NewUser'">
+	<app-new-user></app-new-user>
+</div>
